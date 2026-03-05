@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+}
+
+/* Nav */
+nav {
+    background-color: #000000;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 50px;
+}
+
+nav a:hover {
+    color: #66d9ff;
+}
+
+/* Profile Section */
+#profile {
+    background-color: #dcfdff;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 400px 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* Profile Picture */
+#profile figure {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    margin: 0;
+}
+
+#profile figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header (Name + Title) */
+#profile > header {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#profile header h1 {
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 7px 5px 0px black;
+    margin-bottom: 1rem;
+}
+
+#profile header p {
+    margin: 5px;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    letter-spacing: 0.05em;
+    background-color: white;
+    color: black;
+    box-shadow: 8px 8px 0px 0px black;
+}
+
+/* About Me Heading */
+#about-me-heading {
+    grid-column: 2;
+    grid-row: 2;
+    color: red;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 0px black;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+.card-birthday {
+    grid-column: 2;
+    grid-row: 3;
+    background-color: white;
+    color: black;
+    padding: 1.5rem;
+    box-shadow: 8px 8px 0px 0px black;
+    border: 3px solid black;
+}
+
+.card-age {
+    grid-column: 3;
+    grid-row: 3;
+    background-color: white;
+    color: black;
+    padding: 1.5rem;
+    box-shadow: 8px 8px 0px 0px black;
+    border: 3px solid black;
+    margin-top: 3rem;
+}
+
+.card-profile h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.card-profile p {
+    font-size: 1rem;
+}
+
+/* Hobbies */
+
+#hobbies {
+    grid-column: 3;
+    grid-row: 3b ;
+    background-color: white;
+}
+
+.hobbies-card {
+    background-color: white;
+    color: black;
+    padding: 1.5rem;
+    box-shadow: 8px 8px 0px 0px black;
+    border: 3px solid black;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#stack {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    background-color: #000000;
+    color: white;
+    padding: 2rem;
+}
