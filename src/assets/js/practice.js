@@ -10,12 +10,12 @@ increment after print
 
 print again
 */
-let printNumber = function () {
+function printNumber() {
     const output = document.getElementById("output");
     for (let i = 1; i <= 10; i++) {
         output.innerHTML += i + "<br>";
     }
-    output.innerHTML += "End Loop";
+    output.innerHTML += "End Loop" + "<br>";
 }
 //----------------------------------
 /*
@@ -29,7 +29,7 @@ add two number
 print result
 */
 
-let sum = function () {
+function sum() {
     const num1 = parseFloat(document.getElementById("num1").value);
     const num2 = parseFloat(document.getElementById("num2").value);
     const result = num1 + num2;
@@ -38,8 +38,9 @@ let sum = function () {
 
 //----------------------------------
 
-let isEven = function () {
+function isEven() {
     const num = parseInt(document.getElementById("num").value);
+    const output3 = document.getElementById("output3");
     
     if (num % 2 === 0) {
         output3.innerHTML = `${num} is even number.`;
@@ -49,3 +50,30 @@ let isEven = function () {
     }
 }
 document.getElementById("check").addEventListener("click", isEven);
+
+
+//----------------------------------
+/* minutes to second converter
+
+solution
+take minutes from user
+
+multiply minutes by 60
+
+print
+*/
+function secondsConverter() {
+    const minutes = parseFloat(document.getElementById("minutes").value);
+    const seconds = minutes * 60;
+    document.getElementById("seconds").innerHTML = `Seconds: ${seconds}`;
+}
+
+//----------------------------------
+
+/* get first element of the array*/
+
+function getFirstElement() {
+    const arr = [1, 2, 3, 4, 5];
+    const firstElement = arr[0];
+    document.getElementById("firstElement").innerHTML = `First Element: ${firstElement}`;
+}
