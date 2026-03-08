@@ -21,7 +21,7 @@ function sumArray() {
     for(let i = 0; i < sales.length; i++) {
         sum += sales[i]
     }
-    document.getElementById("total").innerHTML = "Total Sales: " + sum;
+    document.getElementById("total").innerHTML = `Total Sales: ${sum}`;
 }
 
 function clearSales() {
@@ -30,4 +30,26 @@ function clearSales() {
 
     document.getElementById("saleList").innerHTML = "";
     document.getElementById("total").innerHTML = "Total Sales: ";
+}
+
+
+let score = [];
+let highest = 0;
+
+function addScore(){
+    const inputScore = document.getElementById("score").value;
+    const value = parseInt(inputScore);
+
+    if (isNaN(value)) {
+        window.alert("Please enter a valid score");
+        return;
+    }
+
+    score.push(value);
+    document.getElementById("scoreList").innerHTML = score.join("<br>")
+}
+
+function findHighestScore(score){
+    highest = Math.max(...score);
+    document.getElementById("highestResult").innerHTML = `The Highest Score is: ${highest}`
 }
