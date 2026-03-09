@@ -21,10 +21,19 @@
         <input type="number" id="score" placeholder="Enter Score">
         <button id="addScore" onclick="addScore()">Add Score</button>
         <div id="scoreList"></div>
-        <button id="highestScore" onclick="findHighestScore(score)">Find Highest Score</button>
+        <button id="highestScore" onclick="findHighestScore()">Find Highest Score</button>
+        <button id="clearScore" onclick="clearScore()">Clear</button>
         <div id="highestResult"></div>
     </section>
 
+    <section id="findMin">
+        <input type="number" id="temp" placeholder="Enter Your Temperature">
+        <button id="addTemp" onclick="addTemp()">Add Reading</button>
+        <div id="tempList"></div>
+        <button id="lowestTemp" onclick="findLowest()">Find Lowest Temperature</button>
+        <button idc="clearScore" onclick="clearTemp()">Clear</button>
+        <div id="lowestResult"></div>
+    </section>
     <script src="assets/js/practiceLvlTwo.js"></script>
 </body>
 </html>
