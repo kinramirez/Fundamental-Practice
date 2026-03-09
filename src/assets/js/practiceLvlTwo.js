@@ -49,7 +49,39 @@ function addScore(){
     document.getElementById("scoreList").innerHTML = score.join("<br>")
 }
 
-function findHighestScore(score){
+function findHighestScore(){
     highest = Math.max(...score);
     document.getElementById("highestResult").innerHTML = `The Highest Score is: ${highest}`
+}
+
+function clearScore(){
+    sales = [];
+    highest = 0;
+
+    document.getElementById("scoreList").innerHTML = "<br>";
+    document.getElementById("highestResult").innerHTML = "The Highest Score is: ";
+}
+
+let temp = [];
+let lowest = 0;
+
+function addTemp(){
+    const inputTemp = document.getElementById("temp").value;
+    const value = parseFloat(inputTemp);
+
+    temp.push(value);
+    document.getElementById("tempList").innerHTML = temp.join("<br>");
+}
+
+function findLowest(){
+    lowest = Math.min(...temp);
+    document.getElementById("lowestResult").innerHTML = `The lowest temperature is: ${lowest}`;
+}
+
+function clearTemp(){
+    temp = [];
+    lowest = 0;
+
+    document.getElementById("tempList").innerHTML = temp.join("<br>");
+    document.getElementById("lowestResult").innerHTML = "The lowest temperature is: ";
 }
