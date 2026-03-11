@@ -85,3 +85,26 @@ function clearTemp(){
     document.getElementById("tempList").innerHTML = temp.join("<br>");
     document.getElementById("lowestResult").innerHTML = "The lowest temperature is: ";
 }
+
+let student = [];
+let count = 0;
+
+function addCount(){
+    const inputStudent = document.getElementById("studentName").value;
+    student.push(inputStudent);
+    document.getElementById("studentList").innerHTML = student.join("<br>");
+}
+
+function studentCount(){
+    count = student.length;
+
+    document.getElementById("totalCount").innerHTML = `The total count is ${count}`;
+}
+
+function clearCount(){
+    student = [];
+    count = 0
+
+    document.getElementById("studentList").innerHTML = student.join("<br>");
+    document.getElementById("totalCount").innerHTML = `The total count is `;
+}
