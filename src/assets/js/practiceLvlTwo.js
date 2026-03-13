@@ -108,3 +108,16 @@ function clearCount(){
     document.getElementById("studentList").innerHTML = student.join("<br>");
     document.getElementById("totalCount").innerHTML = `The total count is `;
 }
+
+
+function calculatePrice(){
+    let price = document.getElementById("price").value;
+    let quantity = document.getElementById("quantity").value;
+    const totalPrice = price * quantity;
+
+    document.getElementById("totalPrice").innerHTML = `Total price is ${totalPrice}`;
+}
+
+function clearCart(){
+    document.getElementById("totalPrice").innerHTML = "";
+}
