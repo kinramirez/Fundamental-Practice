@@ -10,13 +10,34 @@ increment after print
 
 print again
 */
-function printNumber() {
+function print1to10() {
     const output = document.getElementById("output");
     for (let i = 1; i <= 10; i++) {
         output.innerHTML += i + "<br>";
     }
     output.innerHTML += "End Loop" + "<br>";
 }
+
+//  Change it to print 1 to 20
+for(let i = 1; i<=20; i++){
+    console.log(i);
+}
+
+// Print 10 down to 1 (countdown)
+for(let i = 10; i>=1; i--){
+    console.log(i);
+}
+
+//  Print only even numbers from 1 to 20 
+for (let i = 1; i<=20; i++){
+   if(i % 2 === 0){ 
+    console.log(i)
+   }
+}
+
+
+
+
 //----------------------------------
 /*
 sum two number
