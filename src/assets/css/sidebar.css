@@ -1,0 +1,27 @@
+#layout{
+    display: flex;
+    min-height: 100vh;
+}
+
+#sidebar{
+    background-color: black;
+    color: white;
+    width: 200px;
+    justify-items: center;
+    text-align: center;
+}
+
+#sidebar.collapsed{
+    width: 20px;
+    overflow: hidden;
+}
+
+.nav-link{
+    text-decoration: none;
+    display: block;
+}
+
+.nav-link.active {
+    background: #1e2130;
+    color: #5b6ef5;
+}

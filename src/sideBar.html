@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidebar</title>
+    <link rel="stylesheet" href="assets/css/sidebar.css">
 </head>
-<style>
-
-</style>
 <body>
-    <nav aria-label="Main navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="calculator.html">Calculator</a></li>
-            <li><a href="sideBar.html">Sidebar</a></li>
-            <input type="checkbox" checked>=
-        </ul>
-    </nav>
+    <div id="layout">
+        <aside id="sidebar">
+            <button id="toggleBtn" onclick="collapse()">collapse</button>
+            <nav>
+            <a href="#" class="nav-link active">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Skills</a>
+            <a href="#" class="nav-link">Contact</a>
+            </nav>
+        </aside>
+        <main>
+        </main>
+    </div>
+    <script src="assets/js/sidebar.js"></script>
 </body>
 </html>
